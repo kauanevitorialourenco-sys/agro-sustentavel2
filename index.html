@@ -1,0 +1,533 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Agrinho 2026 - Agro Futuro Sustentável</title>
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, sans-serif;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    background:#eef7ee;
+}
+
+/* MENU */
+
+header{
+    background:#1f6d1f;
+    color:white;
+    position:fixed;
+    width:100%;
+    top:0;
+    z-index:999;
+}
+
+nav{
+    display:flex;
+    justify-content:center;
+    gap:30px;
+    padding:20px;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    font-weight:bold;
+}
+
+/* HERO */
+
+.hero{
+    height:100vh;
+    background:linear-gradient(
+    rgba(0,0,0,.5),
+    rgba(0,0,0,.5)),
+    url("https://images.unsplash.com/photo-1500937386664-56d1dfef3854");
+    background-size:cover;
+    background-position:center;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    color:white;
+    padding:20px;
+}
+
+.hero h1{
+    font-size:60px;
+}
+
+.hero p{
+    font-size:24px;
+    margin-top:20px;
+}
+
+/* SEÇÕES */
+
+section{
+    padding:100px 10%;
+}
+
+.titulo{
+    text-align:center;
+    color:#1f6d1f;
+    margin-bottom:40px;
+    font-size:40px;
+}
+
+.cards{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+    gap:25px;
+}
+
+.card{
+    background:white;
+    border-radius:20px;
+    padding:25px;
+    box-shadow:0 5px 15px rgba(0,0,0,.15);
+    transition:.4s;
+}
+
+.card:hover{
+    transform:translateY(-10px);
+}
+
+.card h3{
+    color:#1f6d1f;
+    margin-bottom:15px;
+}
+
+.card p{
+    line-height:1.8;
+}
+
+/* ESTATÍSTICAS */
+
+.estatisticas{
+    background:#1f6d1f;
+    color:white;
+}
+
+.numeros{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+    gap:40px;
+}
+
+.numero{
+    text-align:center;
+}
+
+.numero h2{
+    font-size:55px;
+}
+
+/* QUIZ */
+
+.quiz{
+    background:white;
+    padding:30px;
+    border-radius:20px;
+    max-width:800px;
+    margin:auto;
+}
+
+button{
+    background:#1f6d1f;
+    color:white;
+    border:none;
+    padding:15px 30px;
+    border-radius:10px;
+    cursor:pointer;
+}
+
+#resultado{
+    margin-top:20px;
+    font-size:22px;
+    color:green;
+}
+
+/* MASCOTE */
+
+#mascote{
+    position:fixed;
+    right:20px;
+    bottom:20px;
+    font-size:100px;
+    animation:pular 1s infinite alternate;
+}
+
+@keyframes pular{
+    from{transform:translateY(0);}
+    to{transform:translateY(-15px);}
+}
+
+#fala{
+    position:fixed;
+    right:120px;
+    bottom:100px;
+    background:white;
+    padding:15px;
+    border-radius:15px;
+    width:220px;
+    box-shadow:0 0 10px rgba(0,0,0,.3);
+}
+
+footer{
+    background:#1f6d1f;
+    color:white;
+    text-align:center;
+    padding:30px;
+}
+
+</style>
+</head>
+
+<body>
+
+<header>
+<nav>
+<a href="#agro">Agro</a>
+<a href="#gado">Gado</a>
+<a href="#leite">Leite</a>
+<a href="#cavalos">Cavalos</a>
+<a href="#faep">FAEP</a>
+<a href="#quiz">Quiz</a>
+</nav>
+</header>
+
+<section class="hero">
+
+<div>
+<h1>🌱 AGRO FUTURO SUSTENTÁVEL</h1>
+
+<p>
+Equilíbrio entre Produção e Meio Ambiente
+</p>
+
+</div>
+
+</section>
+
+<section id="agro">
+
+<h2 class="titulo">🌾 Agricultura Sustentável</h2>
+
+<div class="cards">
+
+<div class="card">
+<h3>Agrotóxicos</h3>
+<p>
+Os agrotóxicos ajudam a proteger as plantações contra pragas,
+doenças e plantas invasoras. Seu uso deve seguir orientações
+técnicas para proteger pessoas e o meio ambiente.
+</p>
+</div>
+
+<div class="card">
+<h3>Controle Biológico</h3>
+<p>
+Utiliza organismos naturais para combater pragas, reduzindo
+o impacto ambiental e promovendo uma agricultura mais sustentável.
+</p>
+</div>
+
+<div class="card">
+<h3>Tecnologia no Campo</h3>
+<p>
+Drones, GPS, sensores e satélites ajudam os agricultores a
+produzir mais utilizando menos recursos.
+</p>
+</div>
+
+</div>
+
+</section>
+
+<section id="gado">
+
+<h2 class="titulo">🐄 Pecuária Bovina</h2>
+
+<div class="cards">
+
+<div class="card">
+<h3>Gado de Corte</h3>
+
+<p>
+A pecuária bovina é uma das atividades mais importantes do Brasil.
+Ela gera empregos, movimenta a economia e contribui para a produção
+de alimentos.
+</p>
+
+</div>
+
+<div class="card">
+<h3>Bem-estar Animal</h3>
+
+<p>
+Animais bem cuidados possuem melhor saúde, maior produtividade e
+melhor qualidade de vida.
+</p>
+
+</div>
+
+<div class="card">
+<h3>Pecuária Sustentável</h3>
+
+<p>
+O manejo correto das pastagens reduz impactos ambientais e aumenta
+a produtividade.
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+<section id="leite">
+
+<h2 class="titulo">🥛 Produção de Leite</h2>
+
+<div class="cards">
+
+<div class="card">
+<h3>Vacas Leiteiras</h3>
+
+<p>
+As vacas leiteiras são fundamentais para a produção de leite,
+queijos, iogurtes, manteiga e muitos outros alimentos.
+</p>
+
+</div>
+
+<div class="card">
+<h3>Ordenha Moderna</h3>
+
+<p>
+Equipamentos modernos garantem higiene, qualidade e conforto
+para os animais.
+</p>
+
+</div>
+
+<div class="card">
+<h3>Importância Nutricional</h3>
+
+<p>
+O leite é uma importante fonte de cálcio, proteínas e vitaminas.
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+<section id="cavalos">
+
+<h2 class="titulo">🐎 Cavalos no Campo</h2>
+
+<div class="cards">
+
+<div class="card">
+<h3>História</h3>
+
+<p>
+Os cavalos acompanham a agricultura há séculos, auxiliando os
+trabalhadores rurais.
+</p>
+
+</div>
+
+<div class="card">
+<h3>Manejo do Gado</h3>
+
+<p>
+Muitos pecuaristas utilizam cavalos para conduzir rebanhos.
+</p>
+
+</div>
+
+<div class="card">
+<h3>Esporte e Cultura</h3>
+
+<p>
+Além do trabalho, os cavalos fazem parte da cultura rural brasileira.
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+<section class="estatisticas">
+
+<h2 class="titulo" style="color:white;">
+📊 O Agro em Números
+</h2>
+
+<div class="numeros">
+
+<div class="numero">
+<h2>🐄</h2>
+<p>Milhões de Bovinos</p>
+</div>
+
+<div class="numero">
+<h2>🥛</h2>
+<p>Produção de Leite</p>
+</div>
+
+<div class="numero">
+<h2>🌽</h2>
+<p>Produção Agrícola</p>
+</div>
+
+<div class="numero">
+<h2>🚜</h2>
+<p>Tecnologia no Campo</p>
+</div>
+
+</div>
+
+</section>
+
+<section id="faep">
+
+<h2 class="titulo">🚜 FAEP</h2>
+
+<div class="card">
+
+<p>
+A FAEP representa os produtores rurais do Paraná e contribui para
+o desenvolvimento do campo através de capacitações, projetos
+educacionais e incentivo à sustentabilidade.
+</p>
+
+<br>
+
+<p>
+O Programa Agrinho é um exemplo de iniciativa que promove educação,
+cidadania, responsabilidade ambiental e valorização do meio rural.
+</p>
+
+</div>
+
+</section>
+
+<section id="quiz">
+
+<h2 class="titulo">🧠 Quiz do Agro</h2>
+
+<div class="quiz">
+
+<p>Qual animal produz leite?</p>
+
+<input type="radio" name="q1" value="1"> Vaca
+<br>
+<input type="radio" name="q1" value="0"> Cavalo
+
+<br><br>
+
+<p>Quem representa produtores rurais?</p>
+
+<input type="radio" name="q2" value="1"> FAEP
+<br>
+<input type="radio" name="q2" value="0"> Cinema
+
+<br><br>
+
+<button onclick="corrigirQuiz()">
+Ver Resultado
+</button>
+
+<div id="resultado"></div>
+
+</div>
+
+</section>
+
+<div id="fala">
+Olá! Eu sou o Agrozinho 👨‍🌾
+</div>
+
+<div id="mascote">
+👨‍🌾
+</div>
+
+<footer>
+
+Projeto Agrinho 2026 • Agro Futuro Sustentável
+
+</footer>
+
+<script>
+
+function corrigirQuiz(){
+
+let pontos = 0;
+
+let q1 =
+document.querySelector('input[name="q1"]:checked');
+
+let q2 =
+document.querySelector('input[name="q2"]:checked');
+
+if(q1) pontos += Number(q1.value);
+if(q2) pontos += Number(q2.value);
+
+document.getElementById("resultado").innerHTML =
+"Você acertou " + pontos + " de 2 perguntas!";
+}
+
+const mensagens = [
+
+"🌱 Sustentabilidade é o futuro!",
+
+"🐄 O gado é muito importante para o Brasil!",
+
+"🥛 O leite vem das vacas leiteiras!",
+
+"🐎 Os cavalos ajudam no campo!",
+
+"🚜 A tecnologia transforma a agricultura!",
+
+"🌽 O agro alimenta milhões de pessoas!"
+
+];
+
+let indice = 0;
+
+setInterval(()=>{
+
+indice++;
+
+if(indice >= mensagens.length){
+indice = 0;
+}
+
+document.getElementById("fala").innerHTML =
+mensagens[indice];
+
+},4000);
+
+</script>
+
+</body>
+</html>
